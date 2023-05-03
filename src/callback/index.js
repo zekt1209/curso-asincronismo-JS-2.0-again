@@ -5,11 +5,16 @@ function sum(num1, num2) {
     return num1 + num2;
 }
 
+function res(num1, num2) {
+    return num1 - num2;
+}
+
 function calc(num1, num2, callback) {
     return callback(num1, num2);
 }
 
-console.log(calc(3, 2, sum));
+console.log("Suma: " + calc(3, 2, sum));
+console.log("Resta: " + calc(3, 2, res));
 
 
 // setTimeout
